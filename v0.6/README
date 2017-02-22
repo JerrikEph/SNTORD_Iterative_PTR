@@ -1,0 +1,4 @@
+encoder was embeded in decoder, taking previous hidden information as it's input
+change of plan, the decoder take x as it's input
+represetation layer and encoder layer have changed to BLSTM encoder
+add self-attention, with respect to v0.3

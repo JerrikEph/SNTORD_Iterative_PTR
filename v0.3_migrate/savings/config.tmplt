@@ -1,0 +1,31 @@
+[General]
+train_data = ./all_data/train.txt
+val_data = ./all_data/valid.txt
+test_data = ./all_data/test.txt
+vocab_path = ./all_data/vocab.100k
+embed_path = ./all_data/embed/embedding.
+processing_step = 1
+sent_rep = lstm
+pre_trained = True
+batch_size = 64
+embed_size = 50
+max_epochs = 100
+early_stopping = 5
+dropout = 0.9
+lr = 0.5
+decay_epoch = 1.0
+decay_rate = 0.95
+reg = 1e-05
+num_steps = 100
+beam_size = 1
+
+[lstm]
+h_enc_sz = 100
+h_dec_sz = 100
+h_rep_sz = 100
+
+[cnn]
+num_filters = 512
+filter_sizes = [3, 4, 5]
+cnn_numlayers = 1
+
